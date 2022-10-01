@@ -18,7 +18,7 @@ public class StatsServiceTest {
 
         long expectedSumAllSales = 163;
 
-        long actualSumAllSales = service.SumAllSales(sales);
+        long actualSumAllSales = service.sumAllSales(sales);
 
         Assertions.assertEquals(expectedSumAllSales, actualSumAllSales);
 
@@ -35,7 +35,7 @@ public class StatsServiceTest {
 
         long expectedAverageMonthlySales = 67;
 
-        long actualAverageMonthlySales = service.AverageMonthlySales(sales);
+        long actualAverageMonthlySales = service.averageMonthlySales(sales);
 
         Assertions.assertEquals(expectedAverageMonthlySales, actualAverageMonthlySales);
 
@@ -53,7 +53,7 @@ public class StatsServiceTest {
 
         int expectedMaxMonth = 8;
 
-        int actualMaxMonth = service.MonthMaxSales(sales);
+        int actualMaxMonth = service.monthMaxSales(sales);
 
         Assertions.assertEquals(expectedMaxMonth, actualMaxMonth);
     }
@@ -70,7 +70,7 @@ public class StatsServiceTest {
 
         int expectedMinMonth = 12;
 
-        int actualMinMonth = service.MonthMinSales(sales);
+        int actualMinMonth = service.monthMinSales(sales);
 
         Assertions.assertEquals(expectedMinMonth, actualMinMonth);
 
@@ -88,7 +88,7 @@ public class StatsServiceTest {
 
         int expectedNumberMonths = 8;
 
-        int actualNumberMonths = service.NumberMonthsBelowAverageSales(sales);
+        int actualNumberMonths = service.numberMonthsBelowAverageSales(sales);
 
         Assertions.assertEquals(expectedNumberMonths, actualNumberMonths);
 
@@ -105,7 +105,7 @@ public class StatsServiceTest {
 
         int expectedNumberMonths = 4;
 
-        int actualNumberMonths = service.NumberMonthsAboveAverageSales(sales);
+        int actualNumberMonths = service.numberMonthsAboveAverageSales(sales);
 
         Assertions.assertEquals(expectedNumberMonths, actualNumberMonths);
 

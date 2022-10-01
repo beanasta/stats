@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class StatsService {
 
 
-    public long SumAllSales(long[] sales) {
+    public long sumAllSales(long[] sales) {
 
         long sumAllSales = Arrays.stream(sales).sum();
 
@@ -15,7 +15,7 @@ public class StatsService {
     }
 
 
-    public long AverageMonthlySales(long[] sales) {
+    public long averageMonthlySales(long[] sales) {
 
         long sumAllSales = Arrays.stream(sales).sum();
 
@@ -27,7 +27,7 @@ public class StatsService {
     }
 
 
-    public int MonthMaxSales(long[] sales) {
+    public int monthMaxSales(long[] sales) {
 
         int maxMonth = 0;
         int month = 0;
@@ -43,7 +43,7 @@ public class StatsService {
     }
 
 
-    public int MonthMinSales(long[] sales) {
+    public int monthMinSales(long[] sales) {
 
         int minMonth = 0;
         int month = 0;
@@ -59,7 +59,7 @@ public class StatsService {
     }
 
 
-    public int NumberMonthsBelowAverageSales(long[] sales) {
+    public int numberMonthsBelowAverageSales(long[] sales) {
 
         int numberMonth = 0;
 
@@ -78,7 +78,7 @@ public class StatsService {
         return numberMonth;
     }
 
-    public int NumberMonthsAboveAverageSales(long[] sales) {
+    public int numberMonthsAboveAverageSales(long[] sales) {
 
         int numberMonth = 0;
 
